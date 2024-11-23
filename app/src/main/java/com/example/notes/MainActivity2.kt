@@ -69,7 +69,7 @@ class MainActivity2 : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-       // registerReceiver(stopwatch, IntentFilter("STOPWATCH_UPDATE"))
+        registerReceiver(stopwatch, IntentFilter("STOPWATCH_UPDATE"))
         timeInSec = getSharedPreferences("StopwatchPrefs", Context.MODE_PRIVATE)
             .getLong("savedTime", 0) // Restore saved time
         updateTimer()
