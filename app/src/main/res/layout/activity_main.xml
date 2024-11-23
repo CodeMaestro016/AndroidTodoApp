@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A67B5B"
+        android:text="NOTES"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your notes"
+        android:layout_below="@id/header"
+        android:layout_margin="10dp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/saveNoteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNote"
+        android:layout_margin="10dp"
+        android:background="#A67B5B"
+        android:text="Save Note"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/viewNotesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Notes"
+        android:layout_below="@id/saveNoteButton"
+        android:layout_margin="10dp"
+        android:background="#A67B5B"
+        android:textColor="#FFFFFF"/>
+
+
+    <ListView
+        android:id="@+id/notesListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewNotesButton"
+        android:layout_margin="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- New Stopwatch Button -->
+    <Button
+        android:id="@+id/stopwatchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notesListView"
+        android:layout_margin="10dp"
+        android:background="#A67B5B"
+        android:text="Stopwatch"
+        android:textColor="#FFFFFF"/>
+
+
+
+
+</RelativeLayout>
